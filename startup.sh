@@ -2,6 +2,11 @@
 
 elasticsearch="${ELASTICSEARCH:-elasticsearch}"
 
+echo ">>>>>>>>>"
+echo $MONGO
+echo $MONGO_USERNAME
+echo $MONGO_PASSWORD
+
 mongo-connector --auto-commit-interval=0 \
 		--continue-on-error \
 		--stdout \
